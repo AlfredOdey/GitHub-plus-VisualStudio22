@@ -13,8 +13,18 @@ namespace GitHub_plus_VisualStudio22
             Console.Write("Enter name: ");
             string name = Console.ReadLine();
             Console.Write("Enter phone number: ");
-            long phoneNumber = Convert.ToInt64(Console.ReadLine());
-            Console.WriteLine($"My name is {name}.\nMy phone number is {phoneNumber}.\n");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            if (age >= 18)
+            {
+                Console.WriteLine($"My name is {name}.\nI am an adult.\n");
+            }
+            else
+            {
+                Console.WriteLine($"My name is {name}.\nI am a minor.\n");
+            }
+
+
         }
     }
 }
